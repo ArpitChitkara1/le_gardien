@@ -1,2 +1,4 @@
 # le_gardien
-Plant Monitoring and Automated Watering System
+                                             🪴Plant Monitoring and Automated Watering System🪴
+
+
