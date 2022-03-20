@@ -1,3 +1,4 @@
+
 #define BLYNK_TEMPLATE_ID " " //Add the template ID created in you blynk 2.0 app
 #define BLYNK_DEVICE_NAME "Plant Monitoring System"
 #define BLYNK_AUTH_TOKEN " "  // Add the Authentication token created for the new device by the Blynk app
@@ -19,6 +20,7 @@ char auth[] = " BLYNK_AUTH_TOKEN ";
 char ssid[] = ""; // Network name
 char pass[] = ""; // Network password
 
+// Instructions for Accessing DHT11 Sensor
 #define DHTPIN 2
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
@@ -28,6 +30,7 @@ void sendSensor()
 float h = dht.readHumidity();
 float t = dht.readTemperature();
 
+// Checks Sensor data , isnan = is NOT A NUMBER with logical OR 
 if (isnan(h) || isnan(t)) {
 Serial.println(" Failed to read from DHT sensor!");
 return;
@@ -36,8 +39,11 @@ return;
 Blynk.virtualWrite(V5, h); //V5 is for Humidity
 Blynk.virtualWrite(V6, t); //V6 is for Temperature
 }
+// Assign GPIO pin values with reference to DEV Board
 int light = 0 ; // D3  light
 int pump = 5 ; // D1 pump
+
+//Code for instructions that has to be executed at the start 
 void setup()
 {
   
@@ -59,7 +65,7 @@ pinMode(pump,OUTPUT);
 int sensor=0;
 int output=0;
 
-// Sensors calculations and operation code
+// Moisture Sensor calculation and operation code
 void sendTemps()
 {
   
@@ -84,3 +90,6 @@ setup();
 timer.run();
 sendTemps();
 }
+
+// Before uploading , check the Serial Port , set the Baud rate to 115200 bps
+// After uploading of the code into the Development Board , Check the Serial Monitor in the IDE to verify the Working of the DEV Board.
