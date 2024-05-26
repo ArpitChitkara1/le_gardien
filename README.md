@@ -1,16 +1,15 @@
 # Project LE GARDIEN - 🪴Plant Monitoring and Automated Watering System🪴
 
-![License](https://img.shields.io/github/license/kshreyashreee/le_gardien.svg)
-![Release](https://img.shields.io/github/v/release/kshreyashreee/le_gardien.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Issues](https://img.shields.io/github/issues/kshreyashreee/le_gardien.svg)
 
 ## Description
 
 This project was done as a part of the Live In Lab Project done at Sri Sai Ram Engineering College during the academic year 2021-2022. The team members are:
 
-- Kalaimathy RD [![LinkedIn](https://img.shields.io/badge/LinkedIn-49464a206-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/kalaimathy-ravi-49464a206/)
-- Deepika R [![LinkedIn](https://img.shields.io/badge/LinkedIn-49464a206-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/deepika-r-730532206/)
-- Shreya Shree [![LinkedIn](https://img.shields.io/badge/LinkedIn-49464a206-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/kshreyashree/)
+- Kalaimathy RD [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kalaimathy-ravi-49464a206/)
+- Deepika R [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepika-r-730532206/)
+- Shreya Shree [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kshreyashree/)
 
 This project is an IoT-based plant monitoring system capable of automating the watering process by analyzing the soil's moisture content. Sensor data is displayed on a mobile phone using the Blynk application. The main objective is to design and implement an IoT-based smart plant monitoring system using NodeMCU (ESP8266), an open-source IoT platform.
 
@@ -65,7 +64,7 @@ This project includes both hardware and software. The hardware part involves bui
 ### Hardware Setup
 
 1. **Connect the Components**: Follow the circuit diagram to connect the NodeMCU, sensors, relay module, water pump, and battery.
-2. **Upload the Code**: Open the Arduino IDE, upload the provided code to the NodeMCU.
+2. **Upload the Code**: Open the Arduino IDE, upload the provided code to the NodeMCU. The code can be found [here](https://github.com/kshreyashreee/le_gardien/blob/main/Plant_Monitoring_and_Automated_Watering_system_code.ino).
 
 ### Software Setup
 
